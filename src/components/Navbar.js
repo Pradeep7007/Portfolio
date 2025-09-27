@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Navbar.css';
 import photo from '../assests/profile-img.jpg';
 import home from '../assests/home.png';
@@ -6,34 +6,73 @@ import stack from '../assests/stack.png';
 import project from '../assests/projects.png';
 import contact from '../assests/contact.png';
 import about from '../assests/about me.png';
+import linkedin from '../assests/linkedin.png';
+import resume from '../assests/resume.png';
+import instagram from '../assests/instagram.png';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeDrawer = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className='nav-bar p-3'>
-        <div className='profile d-flex gap-2'>
-            <div className='img'>
-                <img 
-                src={photo} 
-                alt='img'
-                />
-            </div>
-            <div>
-                <h2>Pradeep S</h2>
-                <p>Full Stack Developer</p>
-            </div>
+    <>
+      {/* Mobile Header */}
+      <div className="mobile-header">
+        <div className="profile-mobile">
+          <img src={photo} alt="profile" className="profile-img-mobile" />
+          <div>
+            <h2 className="name-mobile">Pradeep S</h2>
+            <p className="role-mobile">Full Stack Developer</p>
+          </div>
+        </div>
+        <div className="hamburger" onClick={toggleDrawer}>
+          {isOpen ? '✕' : '☰'}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <nav className={`nav-bar ${isOpen ? 'open' : ''}`}>
+        {/* Desktop Profile */}
+        <div className="profile desktop-only">
+          <div className="img">
+            <img src={photo} alt="img" />
+          </div>
+          <div>
+            <h3 className='mt-3'>Pradeep S</h3>
+            <p>Full Stack Developer</p>
+          </div>
         </div>
 
-        <div className='btns'>
-            <ul>
-                <li><img src={home} alt='home'/>Home</li>
-                <li><img src={stack} alt='stack'/>Stack</li>
-                <li><img src={project} alt='projects'/>Projects</li>
-                <li><img src={about} alt='about'/>About Me</li>
-                <li><img src={contact} alt='contact'/>Contact</li>
-            </ul>
+        <div className="btns">
+          <ul>
+            <li onClick={closeDrawer}><img src={home} alt="home" />Home</li>
+            <li onClick={closeDrawer}><img src={stack} alt="stack" />Stack</li>
+            <li onClick={closeDrawer}><img src={project} alt="projects" />Projects</li>
+            <li onClick={closeDrawer}><img src={about} alt="about" />About Me</li>
+            <li onClick={closeDrawer}><img src={contact} alt="contact" />Contact</li>
+          </ul>
+
+          <hr />
+
+          <ul>
+            <li onClick={closeDrawer}><img src={linkedin} alt="linkedin" />Linkedin</li>
+            <li onClick={closeDrawer}><img src={instagram} alt="instagram" />Instagram</li>
+            <li onClick={closeDrawer}><img src={resume} alt="resume" />Resume</li>
+          </ul>
         </div>
-    </div>
-  )
+      </nav>
+
+      {/* Overlay */}
+      {isOpen && <div className="overlay" onClick={closeDrawer}></div>}
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;

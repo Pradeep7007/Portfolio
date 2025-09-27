@@ -1,14 +1,15 @@
-/* App.css */
-
-.app-container {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+/* Ensure main content starts after navbar on desktop */
+.main-content {
+  margin-left: 20%; /* Match navbar width */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
 }
 
-.main-content {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  background-color: #f9f9f9; /* optional */
+/* On mobile: remove left margin, add top padding for mobile header */
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 80px; /* Height of mobile header */
+  }
 }

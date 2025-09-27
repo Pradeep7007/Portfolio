@@ -1,17 +1,16 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="app-container">
+    <>
       <Navbar />
       <div className="main-content">
-        {/* Your routed content or page content goes here */}
-        <h1>Main Content</h1>
+        <h1>Welcome to my app!</h1>
+        <p>This content won't be hidden behind the navbar.</p>
       </div>
-    </div>
+    </>
   );
 }
 
