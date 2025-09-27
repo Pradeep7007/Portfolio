@@ -1,0 +1,66 @@
+.nav-bar {
+  width: 20%; /* or use fixed like 250px */
+  height: 100vh;
+  background-color: #fff; /* optional: background */
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile {
+  margin-bottom: 30px;
+}
+
+.img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btns {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the ul horizontally */
+}
+
+.btns ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center list items */
+}
+
+.btns ul li {
+  width: 80%; /* adjust as needed */
+  max-width: 200px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 1px solid #D1D3D4;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btns ul li:hover {
+  border: 1px solid #f5ecff;
+  background-color: #f5ecff;
+  color: #aa54ff;
+}
+
+.btns ul li img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
