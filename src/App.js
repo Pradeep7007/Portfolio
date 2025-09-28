@@ -1,15 +1,20 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="main-content">
-        <h1>Welcome to my app!</h1>
-        <p>This content won't be hidden behind the navbar.</p>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   );
 }

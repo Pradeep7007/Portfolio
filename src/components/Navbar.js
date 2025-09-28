@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import './Navbar.css';
 import photo from '../assests/profile-img.jpg';
 import home from '../assests/home.png';
@@ -12,6 +13,7 @@ import instagram from '../assests/instagram.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();  // Initialize navigate
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -19,6 +21,12 @@ function Navbar() {
 
   const closeDrawer = () => {
     setIsOpen(false);
+  };
+
+  // Navigate to the given path and close drawer
+  const handleNavigate = (path) => {
+    navigate(path);
+    closeDrawer();
   };
 
   return (
@@ -45,26 +53,42 @@ function Navbar() {
             <img src={photo} alt="img" />
           </div>
           <div>
-            <h3 className='mt-3'>Pradeep S</h3>
+            <h3 className="mt-3">Pradeep S</h3>
             <p>Full Stack Developer</p>
           </div>
         </div>
 
         <div className="btns">
           <ul>
-            <li onClick={closeDrawer}><img src={home} alt="home" />Home</li>
-            <li onClick={closeDrawer}><img src={stack} alt="stack" />Stack</li>
-            <li onClick={closeDrawer}><img src={project} alt="projects" />Projects</li>
-            <li onClick={closeDrawer}><img src={about} alt="about" />About Me</li>
-            <li onClick={closeDrawer}><img src={contact} alt="contact" />Contact</li>
+            <li onClick={() => handleNavigate('/')}>
+              <img src={home} alt="home" />Home
+            </li>
+            <li onClick={() => handleNavigate('/stack')}>
+              <img src={stack} alt="stack" />Stack
+            </li>
+            <li onClick={() => handleNavigate('/projects')}>
+              <img src={project} alt="projects" />Projects
+            </li>
+            <li onClick={() => handleNavigate('/about')}>
+              <img src={about} alt="about" />About Me
+            </li>
+            <li onClick={() => handleNavigate('/contact')}>
+              <img src={contact} alt="contact" />Contact
+            </li>
           </ul>
 
           <hr />
 
           <ul>
-            <li onClick={closeDrawer}><img src={linkedin} alt="linkedin" />Linkedin</li>
-            <li onClick={closeDrawer}><img src={instagram} alt="instagram" />Instagram</li>
-            <li onClick={closeDrawer}><img src={resume} alt="resume" />Resume</li>
+            <li onClick={() => handleNavigate('/linkedin')}>
+              <img src={linkedin} alt="linkedin" />Linkedin
+            </li>
+            <li onClick={() => handleNavigate('/instagram')}>
+              <img src={instagram} alt="instagram" />Instagram
+            </li>
+            <li onClick={() => handleNavigate('/resume')}>
+              <img src={resume} alt="resume" />Resume
+            </li>
           </ul>
         </div>
       </nav>

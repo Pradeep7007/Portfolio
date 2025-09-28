@@ -1,0 +1,91 @@
+/* Reset styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Container holding the school, college and certifications */
+.academic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual section (School, College, Certifications) */
+.school {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #5D2F77;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* The small colored dot next to name headings */
+.name span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #CAACFB;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.certi{
+    width: 98%;
+  padding: 10px;
+  border: 1px solid #5D2F77;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certi-img{
+    width: 95%;
+    height: 200px;
+}
+/* Certifications list container */
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Each certification card */
+.certification-item {
+  width: 48%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item h5 {
+  margin-bottom: 10px;
+}
+
+.certification-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.certification-item p {
+  margin-top: 10px;
+  text-align: center;
+  color: #555;
+}
+
+/* Responsive - stack certifications on small screens */
+@media (max-width: 600px) {
+  .school {
+    width: 100%;
+  }
+  .certification-item {
+    width: 100% !important;
+  }
+}
