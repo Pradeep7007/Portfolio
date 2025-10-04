@@ -80,7 +80,7 @@
   color: #555;
 }
 
-/* Responsive - stack certifications on small screens */
+
 @media (max-width: 600px) {
   .school {
     width: 100%;

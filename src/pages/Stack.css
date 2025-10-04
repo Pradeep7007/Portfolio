@@ -1,0 +1,45 @@
+.skills{
+
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bg{
+    padding: 1px;
+    border: 1px solid #CAACFB;
+    border-radius: 30px;
+}
+
+.skill-bg:hover{
+    background-color: #8852df;
+    color: white;
+    font-size: 16px;
+}
+
+.font-size{
+    font-weight: 500;
+}
+.font-size:hover{
+    font-weight: 600;
+    color: #5513be;
+    border-radius: 10px;
+}
+
+.skill-name:hover{
+    font-size: 17px;
+}
+
+
+@media screen and (max-width:780px){
+.skills{
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #5D2F77;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+}

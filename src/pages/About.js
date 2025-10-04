@@ -9,7 +9,7 @@ function About() {
   return (
     <div className='all main-content'>
       <div className='academic'>
-        {/* School Section */}
+
         <div className='school'>
           <div className='d-flex gap-2'>
             <img
@@ -90,6 +90,7 @@ function About() {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
