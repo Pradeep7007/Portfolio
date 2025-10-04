@@ -1,5 +1,4 @@
 .skills{
-
   width: 80%;
   padding: 20px;
   border-radius: 10px;
@@ -20,7 +19,7 @@
 }
 
 .font-size{
-    font-weight: 500;
+    font-weight: 600;
 }
 .font-size:hover{
     font-weight: 600;
@@ -32,6 +31,9 @@
     font-size: 17px;
 }
 
+.gapp{
+    gap: 18px;
+}
 
 @media screen and (max-width:780px){
 .skills{

@@ -54,8 +54,8 @@ export const my_stack = [
     skills: [
       { name: "HTML", image: html },
       { name: "CSS", image: css },
-      { name: "Bootstrap", image: bootstrap },
       { name: "JavaScript", image: javascript },
+      { name: "Bootstrap", image: bootstrap },
     ],
   },
   {
@@ -63,6 +63,12 @@ export const my_stack = [
     skills: [
       { name: "Node.js", image: node },
       { name: "Express.js", image: express },
+    ],
+  },
+  {
+    category: "Database",
+    skills: [
+      { name: "MongoDB", image: html }
     ],
   },
   {

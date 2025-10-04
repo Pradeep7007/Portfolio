@@ -4,11 +4,14 @@ import arrow from '../assests/right-arrow.png';
 import one from '../assests/1.png';
 import two from '../assests/2.png';
 import three from '../assests/3.png';
+import { useNavigate } from 'react-router-dom';
 
 const images = [one, two, three];
 
 function Home() {
   const [current, setCurrent] = useState(0);
+
+  const navigate=useNavigate();
 
   const prevSlide = () => {
     setCurrent(prev => (prev === 0 ? images.length - 1 : prev - 1));
@@ -27,6 +30,10 @@ function Home() {
     // Cleanup interval on unmount
     return () => clearInterval(interval);
   }, []);
+
+  const about=()=>{
+    navigate('/about')
+  }
 
   return (
     <div className="all main-content">
@@ -47,8 +54,8 @@ function Home() {
       </div>
 
       <div className='page-btn'>
-        <button className='navi'>About Me <img src={arrow} alt='arrow' /></button>
-        <button className='navi'>Explore Projects <img src={arrow} alt='arrow' /></button>
+        <button className='navii' onClick={about}>About Me <img src={arrow} alt='arrow' /></button>
+        <button className='navii'>Explore Projects <img src={arrow} alt='arrow' /></button>
       </div>
 
       <div>

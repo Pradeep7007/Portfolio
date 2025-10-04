@@ -18,7 +18,7 @@ function Stack() {
             height={40}
             style={{ borderRadius: '10px' }}
         />
-        <h3 className='demo-semibold m-0'>My Technical Proficiency</h3>
+        <h2 className='demo-bold m-0'>My Technical Proficiency</h2>
         </div>
         </div>
 
@@ -27,7 +27,7 @@ function Stack() {
                 <div className='mt-4'>
                     <h3 className='font-size'>{stack.category} : </h3>
 
-                <div className='d-flex gap-2 flex-wrap'>
+                <div className='d-flex flex-wrap gapp'>
                     {stack.skills.map((skill)=>(
                         <div className='d-flex align-items-center justify-content-center skill-bg p-2' 
                         style={{ minWidth:'80px', minHeight: '30px',padding:'5px' }}>

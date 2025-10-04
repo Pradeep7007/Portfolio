@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.navii{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .avai button:hover{
   border: 1px solid #CAACFB;
   background-color: #caacfba2;
@@ -51,6 +57,8 @@ p{
 .page-btn{
   display: flex;
   gap: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 .page-btn button{
@@ -115,4 +123,22 @@ p{
 
 .recent{
   font-weight: 700;
+}
+
+@media only screen and (max-width: 680px) {
+  .page-btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .navii {
+    width: 60%;
+    margin:auto;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 10px;
+    text-align: center;
+  }
 }
