@@ -1,47 +1,98 @@
-.skills{
-  width: 80%;
+.skills {
+  width: 95%;
   padding: 20px;
   border-radius: 10px;
   background-color: #fafafa;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skill-bg{
-    padding: 1px;
-    border: 1px solid #CAACFB;
-    border-radius: 30px;
-}
-
-.skill-bg:hover{
-    background-color: #8852df;
-    color: white;
-    font-size: 16px;
-}
-
-.font-size{
-    font-weight: 600;
-}
-.font-size:hover{
-    font-weight: 600;
-    color: #5513be;
-    border-radius: 10px;
-}
-
-.skill-name:hover{
-    font-size: 17px;
-}
-
-.gapp{
-    gap: 18px;
-}
-
-@media screen and (max-width:780px){
-.skills{
+.skills-container {
+  padding: 7px;
   width: 100%;
-  padding: 20px;
-  border: 2px solid #5D2F77;
-  border-radius: 10px;
-  background-color: #fafafa;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
+
+.category-block {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #000000;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 45%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border: 2px solid #CAACFB;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.skill-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0 0;
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 780px) {
+  .skills {
+    width: 100%;
+    padding: 0px;
+    border: 2px solid #5D2F77;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .skill-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 }

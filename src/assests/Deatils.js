@@ -13,6 +13,7 @@ import express from './express.png';
 import figma from './figma.jpg';
 import bootstrap from './bootstrap.png';
 import github from './github.webp';
+import mongo from './mongodb.webp';
 
 export const certifications = [
   {
@@ -38,44 +39,95 @@ export const certifications = [
 ];
 
 
-
-export const my_stack = [
+export const technicalSkills = [
   {
     category: "Programming Languages",
     skills: [
-      { name: "C", image: c },
-      { name: "Java", image: java_logo },
-      { name: "Python", image: python },
-      { name: "JavaScript", image: javascript },
-    ],
+      {
+        image: c,
+        name: "C",
+        shortExplanation: "Writing efficient low-level code for system programming, embedded systems, and performance-critical applications."
+      },
+      {
+        image: java_logo,
+        name: "Java",
+        shortExplanation: "Developing cross-platform, object-oriented applications with strong memory management and multi-threading capabilities."
+      },
+      {
+        image: python,
+        name: "Python",
+        shortExplanation: "Building versatile applications in web development, automation, and data science using Python's clean syntax and extensive libraries."
+      },
+      {
+        image: javascript,
+        name: "JavaScript",
+        shortExplanation: "Creating interactive web applications by integrating client-side logic and asynchronous features through dynamic scripting."
+      }
+    ]
   },
   {
     category: "Frontend",
     skills: [
-      { name: "HTML", image: html },
-      { name: "CSS", image: css },
-      { name: "JavaScript", image: javascript },
-      { name: "Bootstrap", image: bootstrap },
-    ],
+      {
+        image: html,
+        name: "HTML",
+        shortExplanation: "Defining the structure and layout of web content using semantic elements to ensure accessibility and SEO optimization."
+      },
+      {
+        image: css,
+        name: "CSS",
+        shortExplanation: "Designing visually appealing and responsive interfaces with stylesheets, flexbox, grid systems, and animations."
+      },
+      {
+        image: javascript,
+        name: "JavaScript",
+        shortExplanation: "Implementing front-end interactivity, DOM manipulation, and event-driven behaviors to enhance user experiences."
+      },
+      {
+        image: bootstrap,
+        name: "Bootstrap",
+        shortExplanation: "Rapidly developing mobile-first, responsive websites using a component-based front-end framework with pre-built styles."
+      }
+    ]
   },
   {
     category: "Backend",
     skills: [
-      { name: "Node.js", image: node },
-      { name: "Express.js", image: express },
-    ],
+      {
+        image: node,
+        name: "Node.js",
+        shortExplanation: "Building scalable server-side applications and APIs using JavaScript runtime built on Chrome's V8 engine."
+      },
+      {
+        image: express,
+        name: "Express.js",
+        shortExplanation: "Creating RESTful APIs with minimal configuration, middleware support, and efficient routing using the Express framework."
+      }
+    ]
   },
   {
     category: "Database",
     skills: [
-      { name: "MongoDB", image: html }
-    ],
+      {
+        image: mongo,
+        name: "MongoDB",
+        shortExplanation: "Managing flexible, JSON-like data structures in a NoSQL environment to support scalable and high-performance applications."
+      }
+    ]
   },
   {
     category: "Tools & Design",
     skills: [
-      { name: "Figma", image: figma },
-      { name: "GitHub", image: github },
-    ],
-  },
+      {
+        image: figma,
+        name: "Figma",
+        shortExplanation: "Designing and prototyping UI/UX interfaces collaboratively, using vector tools and component systems for consistency."
+      },
+      {
+        image: github,
+        name: "GitHub",
+        shortExplanation: "Collaborating on software projects with version control, issue tracking, and continuous integration workflows using Git."
+      }
+    ]
+  }
 ];

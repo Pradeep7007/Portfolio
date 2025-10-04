@@ -1,7 +1,7 @@
 import React from 'react'
 import './Stack.css';
 import skill from '../assests/skill.png';
-import { my_stack } from '../assests/Deatils.js';
+import { technicalSkills } from '../assests/Deatils.js';
 
 function Stack() {
   return (
@@ -9,38 +9,40 @@ function Stack() {
       
       <div className='skills'>
 
-        <div className='d-flex justify-content-center'>
-        <div className='d-flex gap-2 align-items-center'>
-        <img
-            src={skill}
-            alt='skill logo'
-            width={40}
-            height={40}
-            style={{ borderRadius: '10px' }}
-        />
-        <h2 className='demo-bold m-0'>My Technical Proficiency</h2>
-        </div>
-        </div>
+        <div className="container text-center mb-4">
+  <div className="d-flex justify-content-center align-items-center flex-wrap gap-2">
+    <img
+      src={skill}
+      alt='skill logo'
+      width={40}
+      height={40}
+      style={{ borderRadius: '10px' }}
+    />
+    <h2 className='demo-bold m-0'>My Technical Proficiency</h2>
+  </div>
+</div>
 
-        <div className='mt-3'>
-            {my_stack.map((stack,index)=>(
-                <div className='mt-4'>
-                    <h3 className='font-size'>{stack.category} : </h3>
 
-                <div className='d-flex flex-wrap gapp'>
-                    {stack.skills.map((skill)=>(
-                        <div className='d-flex align-items-center justify-content-center skill-bg p-2' 
-                        style={{ minWidth:'80px', minHeight: '30px',padding:'5px' }}>
-                        <h6 className='m-0 skill-name'>{skill.name}</h6>
-                        </div>
-                    ))}
+        <div className="skills-container">
+      {technicalSkills.map((category, index) => (
+        <div key={index} className="category-block">
+          <h2 className="category-title demo-semibold">{category.category}:</h2>
+          <div className="skills-grid">
+            {category.skills.map((skill, idx) => (
+              <div key={idx} className="skill-card">
+                <div className="skill-header">
+                  <img src={skill.image} alt={skill.name} className="skill-image" />
+                  <h3 className="skill-name">{skill.name}</h3>
                 </div>
-                </div>
+                <p className="skill-description">{skill.shortExplanation}</p>
+              </div>
             ))}
+          </div>
         </div>
+      ))}
+    </div>
 
-      </div>
-
+    </div>
     </div>
   )
 }
