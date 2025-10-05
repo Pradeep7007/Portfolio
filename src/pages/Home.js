@@ -31,9 +31,9 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const about=()=>{
-    navigate('/about')
-  }
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
 
   return (
     <div className="all main-content">
@@ -54,7 +54,7 @@ function Home() {
       </div>
 
       <div className='page-btn'>
-        <button className='navii' onClick={about}>About Me <img src={arrow} alt='arrow' /></button>
+        <button className='navii' onClick={() => handleNavigate('/about')}>About Me <img src={arrow} alt='arrow' /></button>
         <button className='navii'>Explore Projects <img src={arrow} alt='arrow' /></button>
       </div>
 

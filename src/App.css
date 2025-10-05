@@ -1,7 +1,6 @@
 
 .main-content {
   margin-left: 21%; /* Match navbar width */
-  padding: 20px;
   box-sizing: border-box;
   transition: margin-left 0.3s ease;
 }

@@ -1,6 +1,3 @@
-.all.main-content {
-  padding: 10px;
-}
 
 .avai button {
   padding: 10px 20px;
@@ -64,7 +61,7 @@ p{
 .page-btn button{
   padding: 7px;
   border:1px;
-  background-color: #a46bff;
+  background-color: #8847f2;
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -72,7 +69,8 @@ p{
 }
 
 .page-btn button:hover{
-  background-color:#1e2961 ;
+  background-color:#7614ff ;
+  transition: .3s ease-in-out;
   color: white;
   font-weight: 600;
 }

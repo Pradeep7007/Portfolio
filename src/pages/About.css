@@ -46,7 +46,13 @@
 .certi-img{
     width: 95%;
     height: 200px;
+    object-fit: fill;
 }
+.certi-img:hover{
+    transform: scale(1.08);
+    transition: .5s ease-in-out;
+}
+
 /* Certifications list container */
 .certifications-list {
   display: flex;
