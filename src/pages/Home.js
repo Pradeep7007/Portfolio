@@ -36,7 +36,7 @@ function Home() {
   };
 
   return (
-    <div className="all main-content">
+    <div className="main-content">
       <div className="avai">
         <button><span></span>Available For Work</button>
       </div>
