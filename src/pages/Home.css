@@ -23,6 +23,7 @@
   border: 1px solid #CAACFB;
   background-color: #caacfba2;
   color: #9830fa;
+  transition: 0.2s ease-out;
   span{
     background-color: #9830fa;
   }

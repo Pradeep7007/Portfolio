@@ -1,5 +1,5 @@
 .skills {
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   padding: 20px;
   border-radius: 10px;
@@ -57,11 +57,14 @@
   border: 2px solid #CAACFB;
   cursor: pointer;
 }
-
+.stack-skill-card:hover{
+  transform: scale(1.1);
+  transition: .5s ease-in;
+}
 .stack-skill-image {
   width: 40px;
   height: 40px;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 50%; /* Rounded */
   margin-bottom: 0.5rem;
 }

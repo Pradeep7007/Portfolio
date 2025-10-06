@@ -13,7 +13,7 @@ import express from './express.png';
 import figma from './figma.jpg';
 import bootstrap from './bootstrap.png';
 import github from './github.webp';
-import mongo from './mongodb.jpg';
+import mongo from './mongodb.png';
 import data from './sdms.png';
 import cropio from './cropio.png';
 import skillbridge from './skillbridge.png';
