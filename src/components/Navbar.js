@@ -48,7 +48,7 @@ function Navbar() {
       // Create a temporary link to download the file
       const link = document.createElement('a');
       link.href = cvUrl;
-      link.download = 'Pradeep_S_Resume.pdf'; // filename for the downloaded file
+      link.download = 'Pradeep-BIT-Resume.pdf'; // filename for the downloaded file
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

@@ -7,7 +7,7 @@
   color: black;
   border-radius: 5px;
   border: 1px solid #EBEBEB;
-  cursor: pointer;
+  cursor:default;
   display: flex;
   gap: 10px;
   align-items: center;
