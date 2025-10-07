@@ -55,7 +55,7 @@ function Home() {
 
       <div className='page-btn'>
         <button className='navii' onClick={() => handleNavigate('/about')}>About Me <img src={arrow} alt='arrow' /></button>
-        <button className='navii'>Explore Projects <img src={arrow} alt='arrow' /></button>
+        <button className='navii' onClick={() => handleNavigate('/projects')} >Explore Projects <img src={arrow} alt='arrow' /></button>
       </div>
 
       <div>

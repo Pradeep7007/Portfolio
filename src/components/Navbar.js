@@ -24,10 +24,42 @@ function Navbar() {
   };
 
   // Navigate to the given path and close drawer
+  // Open external links for LinkedIn and Instagram in new tab
   const handleNavigate = (path) => {
-    navigate(path);
-    closeDrawer();
+    if (path === '/linkedin') {
+      window.open('https://www.linkedin.com/in/pradeep7007/', '_blank');
+      closeDrawer();
+    } else if (path === '/instagram') {
+      window.open('https://www.instagram.com/', '_blank');
+      closeDrawer();
+    } else {
+      navigate(path);
+      closeDrawer();
+    }
   };
+
+   const handleDownloadCV = () => {
+    const confirmDownload = window.confirm('Do you want to download the Pradeep Resume ?');
+    if (confirmDownload) {
+      // Trigger download
+      // If you have a public URL for the file, use it directly, e.g.:
+      const cvUrl = './Resume.pdf'; // path to your CV file (put resume.pdf in public folder)
+
+      // Create a temporary link to download the file
+      const link = document.createElement('a');
+      link.href = cvUrl;
+      link.download = 'Pradeep_S_Resume.pdf'; // filename for the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Close drawer if open
+      closeDrawer();
+    } else {
+      // User canceled download, do nothing
+    }
+  };
+
 
   return (
     <>
@@ -80,16 +112,16 @@ function Navbar() {
           <hr />
 
           <ul>
-            <li onClick={() => handleNavigate('/linkedin')}>
-              <img src={linkedin} alt="linkedin" />Linkedin
-            </li>
-            <li onClick={() => handleNavigate('/instagram')}>
-              <img src={instagram} alt="instagram" />Instagram
-            </li>
-            <li onClick={() => handleNavigate('/resume')}>
-              <img src={resume} alt="resume" />Resume
-            </li>
-          </ul>
+        <li onClick={() => handleNavigate('/linkedin')}>
+          <img src={linkedin} alt="linkedin" />Linkedin
+        </li>
+        <li onClick={() => handleNavigate('/instagram')}>
+          <img src={instagram} alt="instagram" />Instagram
+        </li>
+        <li onClick={handleDownloadCV}>
+          <img src={resume} alt="resume" />Download Resume
+        </li>
+      </ul>
         </div>
       </nav>
 
