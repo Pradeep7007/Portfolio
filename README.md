@@ -19,7 +19,7 @@ I'm a 3rd-year B.Tech student specializing in Artificial Intelligence and Data S
 
 ## Projects
 
-### [My Portfolio Website](https://iampradeep-folio.netlify.app)
+### [My Portfolio Website](https://iam-pradeep-folio.netlify.app)
 _A personal portfolio showcasing my skills in front-end design, UI/UX, and full-stack development._
 
 *More projects will be updated soon!*
