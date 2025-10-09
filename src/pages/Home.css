@@ -82,8 +82,8 @@ p{
 .page-btn img{
   width: 20px;
   height: 30px;
-  transform: rotate(-30deg);
   align-items: center;
+  object-fit: fill;
 }
 
 .carousel-image {
