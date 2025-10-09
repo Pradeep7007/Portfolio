@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate
-import './Navbar.css';
+ import './Navbar.css';
 import photo from '../assests/profile-img.jpg';
 import home from '../assests/home.png';
 import stack from '../assests/stack.png';

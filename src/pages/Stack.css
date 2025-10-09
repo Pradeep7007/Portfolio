@@ -1,12 +1,12 @@
 .skills {
   width: 100%;
-  max-width: 1000px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: #e2e2e232;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
   transition: box-shadow 0.3s ease;
+  border: 2px solid #eee;
 }
 
 .skills:hover {
@@ -26,8 +26,6 @@
 .stack-category-title {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
-  color: #000000;
-  border-bottom: 2px solid #ddd;
   padding-bottom: 0.3rem;
 }
 
@@ -50,6 +48,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* margin: auto; */
 }
 
 .stack-skill-card:hover {
@@ -114,5 +113,11 @@
 
   .stack-skill-explanation {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1435px) {
+  .main-content{
+    margin-left: 15%;
   }
 }

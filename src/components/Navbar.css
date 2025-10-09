@@ -1,4 +1,4 @@
-/* Desktop Navbar */
+
 .nav-bar {
   width: 21%;
   height: 100vh;
@@ -203,4 +203,16 @@ hr {
     font-size: 17px;
     padding: 7px;
   }
+}
+/* @media (min-width: 1024px) and (max-width: 1439px) */
+
+@media screen and (min-width: 1435px) {
+  .nav-bar {
+  width: max-content;
+  }
+  .btns ul{
+    padding: 5px;
+    gap: 20px;
+  }
+  
 }
