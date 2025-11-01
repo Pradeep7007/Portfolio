@@ -17,6 +17,7 @@ import mongo from './mongodb.png';
 import data from './sdms.png';
 import cropio from './cropio.png';
 import skillbridge from './skillbridge.png';
+import cropio_demo from './cropio demo.png';
 import react from './react.png';
 
 export const certifications = [
@@ -240,6 +241,13 @@ export const technicalSkills = [
 
 export const project = [
   {
+    img: cropio_demo, // Replace this with the actual Cropio Figma design image if you have one
+    type: 'Cropio - Full Stack',
+    explanation:
+      'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',
+    link: 'https://cropio1.vercel.app',
+  },
+  {
     img: data,
     type: 'Student Database Management - Full Stack',
     explanation:
@@ -255,9 +263,9 @@ export const project = [
   },
   {
     img: cropio,
-    type: 'Cropio - Frontend',
+    type: 'Corpio - Frontend',
     explanation:
-      'Cropio is a frontend AI-based sustainable agriculture platform. Built using React.js and Bootstrap, it showcases how AI can assist in smart farming practices through intuitive UI and responsive layouts.',
+      'Corpio is a frontend AI-based sustainable agriculture platform. Built using React.js and Bootstrap, it showcases how AI can assist in smart farming practices through intuitive UI and responsive layouts.',
     link: 'https://github.com/Pradeep7007/student-database-management',
   },
   {
@@ -269,9 +277,10 @@ export const project = [
   },
   {
     img: cropio, // Replace this with the actual Cropio Figma design image if you have one
-    type: 'Cropio - Figma Design',
+    type: 'Corpio - Figma Design',
     explanation:
       'Cropio Figma design: A UI/UX prototype focusing on sustainable agriculture solutions designed in Figma to visualize user flow and interface elements.',
     link: 'https://www.figma.com/design/oKPtFqVasv58Rg51hx4gOJ/Corpio?m=auto&t=D0qqdTQL1yAcwD0B-6',
   },
+  
 ];
