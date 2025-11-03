@@ -29,7 +29,7 @@ _A personal portfolio showcasing my skills in front-end design, UI/UX, and full-
 Feel free to reach out if you'd like to collaborate or just say hi!
 
 - 📧 [pmspradeep007@gmail.com](mailto:pmspradeep007@gmail.com)
-- 🌐 [iampradeep-folio.netlify.app](https://iampradeep-folio.netlify.app)
+- 🌐 [iam-pradeep-folio.netlify.app](https://iam-pradeep-folio.netlify.app)
 - 🐙 [GitHub - Pradeep7007](https://github.com/Pradeep7007)
 
 ---
