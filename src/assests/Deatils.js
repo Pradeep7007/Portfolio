@@ -18,9 +18,15 @@ import data from './sdms.png';
 import cropio from './cropio.png';
 import skillbridge from './skillbridge.png';
 import cropio_demo from './cropio demo.png';
+import kaggleml from './kaggle ml.png';
 import react from './react.png';
 
 export const certifications = [
+  {
+    title: "Introduction To Machine Learning",
+    img: kaggleml,
+    explanation: "This certificate showcases practical hands-on skills, from basic data exploration to advanced topics like random forests and model competition workflows.",
+  },
   {
     title: "Java Basics Certification",
     img: java,
