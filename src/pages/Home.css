@@ -23,6 +23,7 @@
   background-color: #caacfba2;
   color: #9830fa;
   transition: 0.2s ease-out;
+  cursor: pointer;
   span{
     background-color: #9830fa;
   }
