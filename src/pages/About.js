@@ -62,7 +62,7 @@ function About() {
             <h6>Bannari Amman Institute Of Technlogy</h6>
             <h6>B.TECH - Artificial Intelligence and Data Science</h6>
 
-            <p>CGPA - 7.42% - Till 5th Semester </p>
+            <p>CGPA - 7.52% - Till 6th Semester </p>
           </div>
         </div>
 
