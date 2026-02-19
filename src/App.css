@@ -17,4 +17,19 @@
     margin-top: 70px;
     padding: 16px 4vw 12px 4vw;
   }
+}
+
+.footer {
+  margin-left: var(--navbar-width);
+  padding: 1px;
+  background-color: #f1f1f1;
+  transition: margin-left 0.3s ease;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-left: 0;
+    padding-bottom: 5px; /* Extra padding for mobile if needed, or similar to content */
+  }
 }    
