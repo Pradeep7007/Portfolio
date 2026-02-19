@@ -13,8 +13,22 @@
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease;
+  transition: width 0.3s ease, transform 0.3s ease;
   z-index: 1000;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    width: min(220px, 18vw);
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-bar {
+    width: min(220px, 16vw);
+    padding: 15px 5px;
+  }
 }
 
 .profile {
@@ -207,12 +221,8 @@ hr {
 /* @media (min-width: 1024px) and (max-width: 1439px) */
 
 @media screen and (min-width: 1435px) {
-  .nav-bar {
-  width: max-content;
-  }
   .btns ul{
     padding: 5px;
     gap: 20px;
   }
-  
 }

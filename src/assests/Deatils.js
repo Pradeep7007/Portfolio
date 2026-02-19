@@ -247,7 +247,7 @@ export const technicalSkills = [
 
 export const project = [
   {
-    img: cropio_demo, // Replace this with the actual Cropio Figma design image if you have one
+    img: cropio_demo, 
     type: 'Cropio - Full Stack',
     explanation:
       'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',

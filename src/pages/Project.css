@@ -1,3 +1,39 @@
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .skills-container {
+    gap: 14px;
+    justify-content: center;
+  }
+  .skill-image {
+    height: 150px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .skills-container {
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .skill-card {
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+  }
+  .skill-image {
+    height: 100px;
+  }
+  .skill-type {
+    font-size: clamp(1.1rem, 3vw, 1.1rem);
+  }
+  .skill-explanation {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+  .project-button {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding: 8px 12px;
+  }
+}
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +107,7 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .skill-card {
     width: 100%;
     margin: auto;

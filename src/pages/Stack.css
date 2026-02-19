@@ -1,3 +1,42 @@
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .skills {
+    width: 98%;
+    padding: 12px 10px;
+  }
+  .stack-skills-grid {
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .skills {
+    width: 100%;
+    padding: 8px 2px;
+    margin: 0.5rem auto;
+  }
+  .stack-category-title {
+    font-size: clamp(1.1rem, 5vw, 1.3rem);
+    margin-bottom: 0.7rem;
+  }
+  .stack-skill-title {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+  }
+  .stack-skill-explanation {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+  .stack-skill-card {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 2px;
+  }
+  .stack-skill-image {
+    width: 32px;
+    height: 32px;
+  }
+}
 .skills {
   width: 100%;
   padding: 20px;
@@ -81,7 +120,7 @@
 }
 
 /* Responsive for Mobile */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .skills {
     width: 95%;
     padding: 15px 20px;
@@ -116,8 +155,3 @@
   }
 }
 
-@media screen and (min-width: 1435px) {
-  .main-content{
-    margin-left: 15%;
-  }
-}

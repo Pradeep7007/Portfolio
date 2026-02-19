@@ -1,14 +1,36 @@
+/* Define a CSS variable for navbar width for consistency */
+:root {
+  --navbar-width: 21%;
+  --navbar-width-min: 220px;
+  --navbar-width-max: 320px;
+}
+
 
 .main-content {
-  margin-left: 21%; /* Match navbar width */
+  margin-left: var(--navbar-width, 21%);
+  min-width: 0;
   padding: 20px;
   box-sizing: border-box;
   transition: margin-left 0.3s ease;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    margin-left: min(var(--navbar-width-min), 18vw);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    margin-left: min(var(--navbar-width-min), 16vw);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .main-content {
     margin-left: 0;
-    margin-top: 60px;
+    margin-top: 70px;
+    padding: 16px 4vw 12px 4vw;
   }
 }
