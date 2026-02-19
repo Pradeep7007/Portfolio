@@ -59,7 +59,7 @@ function About() {
           </div>
 
           <div className='ms-3'>
-            <h6>Bannari Amman Institute Of Technlogy</h6>
+            <h6>Bannari Amman Institute Of Technlogy - Sathyamangalam</h6>
             <h6>B.TECH - Artificial Intelligence and Data Science</h6>
 
             <p>CGPA - 7.52% - Till 6th Semester </p>

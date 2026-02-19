@@ -20,12 +20,19 @@ import skillbridge from './skillbridge.png';
 import cropio_demo from './cropio demo.png';
 import kaggleml from './kaggle ml.png';
 import react from './react.png';
+<<<<<<< HEAD
 import se17 from './java se 17.jpg';
 import reactjs from './react js.jpg';
+=======
+import oracle from './se 17.png';
+import nptel from './nptel.png';
+import reactjs from './react_cer.png';
+>>>>>>> temp
 
 export const certifications = [
   {
     title: "ORACLE - Java SE 17 Developer",
+<<<<<<< HEAD
     img: se17,
     explanation: "This achievement reflects my strong understanding of Java SE 17 features, object-oriented programming, and building robust, scalable applications.",
   },
@@ -38,6 +45,20 @@ export const certifications = [
     title: "Cisco Networking Certification",
     img: cisco,
     explanation: "Certified in foundational networking principles including routing, switching, and network protocols.",
+=======
+    img: oracle,
+    explanation: "Certified in Oracle SE 17 Java with strong knowledge of core Java concepts and modern features.Capable of developing efficient and scalable Java applications.",
+  },
+  {
+    title: "NPTEL - Responsible & Safe AI Systems",
+    img: nptel,
+    explanation: "Certified in Responsible and Safe AI Systems by NPTEL.Understood key principles of ethical, safe, and trustworthy AI development.",
+  },
+  {
+    title: "Scaler - React JS",
+    img: reactjs,
+    explanation: "Completed React JS certification from Scaler with practical experience in frontend development.Skilled in building responsive and interactive web applications.",
+>>>>>>> temp
   },
   {
     title: "Introduction To Machine Learning",
@@ -259,7 +280,7 @@ export const technicalSkills = [
 
 export const project = [
   {
-    img: cropio_demo, // Replace this with the actual Cropio Figma design image if you have one
+    img: cropio_demo, 
     type: 'Cropio - Full Stack',
     explanation:
       'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',

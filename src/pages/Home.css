@@ -1,3 +1,75 @@
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .self, .page-btn {
+    width: 98%;
+  }
+  .carousel-image {
+    max-height: 300px;
+  }
+}
+
+/* Responsive: Small tablets and large phones */
+@media (max-width: 767px) {
+  .intro h2 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+  .intro h4 {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+  .self, .page-btn {
+    width: 100%;
+    padding: 0 8px;
+  }
+  .page-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .carousel-image {
+    max-height: 200px;
+  }
+  .navii {
+    width: 60%;
+    margin:auto;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .intro h2 {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
+  }
+  .self, .page-btn {
+    width: 100%;
+    padding: 0 4px;
+  }
+  .page-btn {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .carousel-image {
+    max-height: 120px;
+  }
+  .navii {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .avai button {
+    font-size: 14px;
+    padding: 7px 12px;
+  }
+  p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+}
 .avai button {
   padding: 10px 20px;
   font-size: 16px;
@@ -127,20 +199,4 @@ p{
   font-weight: 700;
 }
 
-@media only screen and (max-width: 680px) {
-  .page-btn {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
 
-  .navii {
-    width: 60%;
-    margin:auto;
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    gap: 10px;
-    text-align: center;
-  }
-}

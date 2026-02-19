@@ -1,3 +1,81 @@
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .academic {
+    gap: 15px;
+    padding: 0 12px;
+  }
+  .school {
+    width: 48%;
+    padding: 12px;
+  }
+  .certi {
+    width: 100%;
+  }
+  .certification-item {
+    width: 48%;
+    padding: 10px;
+  }
+}
+
+/* Tablets and large phones (up to 900px) */
+@media (max-width: 900px) {
+  .academic {
+    gap: 12px;
+    padding: 0 10px;
+  }
+  .school {
+    width: 100% !important;
+    padding: 12px;
+  }
+  .certi {
+    width: 100%;
+    padding: 12px;
+  }
+  .certification-item {
+    width: 100% !important;
+    padding: 10px;
+  }
+  .certi:hover {
+    margin-top: 10px;
+  }
+  .certi-img {
+    height: auto;
+    min-height: 120px;
+  }
+}
+
+/* Mobile phones (smaller than 600px) */
+@media (max-width: 599px) {
+  .academic {
+    gap: 10px;
+    padding: 0 8px;
+  }
+  .school {
+    width: 100%;
+    padding: 10px;
+  }
+  .certi {
+    width: 100%;
+    padding: 10px;
+  }
+  .certification-item {
+    width: 100% !important;
+    padding: 8px;
+  }
+  .certi:hover {
+    margin-top: 8px;
+    border: 1px solid #CAACFB;
+    transform: scale(1.02);
+  }
+  .certi-img {
+    height: auto;
+    min-height: 100px;
+  }
+  .name span {
+    width: 8px;
+    height: 8px;
+  }
+}
 /* Reset styles */
 *{
   padding: 0;
