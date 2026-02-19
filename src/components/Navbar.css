@@ -1,6 +1,6 @@
 
 .nav-bar {
-  width: 21%;
+  width: 280px;
   height: 100vh;
   background-color: #fff;
   padding: 20px;
@@ -9,26 +9,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  overflow-y: auto; /* Enable scrolling for small heights */
   position: fixed;
   top: 0;
   left: 0;
-  transition: width 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-bar {
-    width: min(220px, 18vw);
-    padding: 15px 10px;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.nav-bar::-webkit-scrollbar {
+  display: none;
 }
 
-@media screen and (max-width: 900px) {
-  .nav-bar {
-    width: min(220px, 16vw);
-    padding: 15px 5px;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.nav-bar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .profile {

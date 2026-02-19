@@ -10,7 +10,6 @@ import about from '../assests/about me.png';
 import linkedin from '../assests/linkedin.png';
 import resume from '../assests/resume.png';
 import instagram from '../assests/instagram.png';
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();  // Initialize navigate
@@ -29,7 +28,7 @@ function Navbar() {
     if (path === '/linkedin') {
       window.open('https://www.linkedin.com/in/pradeep7007/', '_blank');
       closeDrawer();
-    } else if (path === '/instagram') {
+    }  else if (path === '/instagram') {
       window.open('https://www.instagram.com/', '_blank');
       closeDrawer();
     } else {

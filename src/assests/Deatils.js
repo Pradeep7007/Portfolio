@@ -20,8 +20,26 @@ import skillbridge from './skillbridge.png';
 import cropio_demo from './cropio demo.png';
 import kaggleml from './kaggle ml.png';
 import react from './react.png';
+import oracle from './se 17.png';
+import nptel from './nptel.png';
+import reactjs from './react_cer.png';
 
 export const certifications = [
+  {
+    title: "ORACLE - Java SE 17 Developer",
+    img: oracle,
+    explanation: "Certified in Oracle SE 17 Java with strong knowledge of core Java concepts and modern features.Capable of developing efficient and scalable Java applications.",
+  },
+  {
+    title: "NPTEL - Responsible & Safe AI Systems",
+    img: nptel,
+    explanation: "Certified in Responsible and Safe AI Systems by NPTEL.Understood key principles of ethical, safe, and trustworthy AI development.",
+  },
+  {
+    title: "Scaler - React JS",
+    img: reactjs,
+    explanation: "Completed React JS certification from Scaler with practical experience in frontend development.Skilled in building responsive and interactive web applications.",
+  },
   {
     title: "Introduction To Machine Learning",
     img: kaggleml,
