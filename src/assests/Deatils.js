@@ -20,32 +20,29 @@ import skillbridge from './skillbridge.png';
 import cropio_demo from './cropio demo.png';
 import kaggleml from './kaggle ml.png';
 import react from './react.png';
-<<<<<<< HEAD
 import se17 from './java se 17.jpg';
 import reactjs from './react js.jpg';
-=======
 import oracle from './se 17.png';
 import nptel from './nptel.png';
-import reactjs from './react_cer.png';
->>>>>>> temp
+import react_js from './react_cer.png';
 
 export const certifications = [
   {
     title: "ORACLE - Java SE 17 Developer",
-<<<<<<< HEAD
     img: se17,
     explanation: "This achievement reflects my strong understanding of Java SE 17 features, object-oriented programming, and building robust, scalable applications.",
   },
   {
     title: "React.js Developer",
-    img: reactjs,
+    img: react_js,
     explanation: "Certified React JS Developer from Scaler with expertise in building scalable, dynamic web applications.Proficient in modern React concepts including hooks, state management, and performance optimization.",
   },
   {
     title: "Cisco Networking Certification",
     img: cisco,
     explanation: "Certified in foundational networking principles including routing, switching, and network protocols.",
-=======
+  },
+  {
     img: oracle,
     explanation: "Certified in Oracle SE 17 Java with strong knowledge of core Java concepts and modern features.Capable of developing efficient and scalable Java applications.",
   },
@@ -58,7 +55,6 @@ export const certifications = [
     title: "Scaler - React JS",
     img: reactjs,
     explanation: "Completed React JS certification from Scaler with practical experience in frontend development.Skilled in building responsive and interactive web applications.",
->>>>>>> temp
   },
   {
     title: "Introduction To Machine Learning",
