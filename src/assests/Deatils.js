@@ -43,10 +43,6 @@ export const certifications = [
     explanation: "Certified in foundational networking principles including routing, switching, and network protocols.",
   },
   {
-    img: oracle,
-    explanation: "Certified in Oracle SE 17 Java with strong knowledge of core Java concepts and modern features.Capable of developing efficient and scalable Java applications.",
-  },
-  {
     title: "NPTEL - Responsible & Safe AI Systems",
     img: nptel,
     explanation: "Certified in Responsible and Safe AI Systems by NPTEL.Understood key principles of ethical, safe, and trustworthy AI development.",
