@@ -22,7 +22,6 @@ import kaggleml from './kaggle ml.png';
 import react from './react.png';
 import se17 from './java se 17.jpg';
 import reactjs from './react js.jpg';
-import oracle from './se 17.png';
 import nptel from './nptel.png';
 import react_js from './react_cer.png';
 
