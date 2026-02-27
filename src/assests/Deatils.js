@@ -293,9 +293,9 @@ export const project = [
   },
   {
     img: cropio,
-    type: 'Corpio - Frontend',
+    type: 'Cropio - Frontend',
     explanation:
-      'Corpio is a frontend AI-based sustainable agriculture platform. Built using React.js and Bootstrap, it showcases how AI can assist in smart farming practices through intuitive UI and responsive layouts.',
+      'Cropio is a frontend AI-based sustainable agriculture platform. Built using React.js and Bootstrap, it showcases how AI can assist in smart farming practices through intuitive UI and responsive layouts.',
     link: 'https://github.com/Pradeep7007/student-database-management',
   },
   {
@@ -306,8 +306,8 @@ export const project = [
     link: 'https://www.figma.com/design/Fow0E0iu0rwdz06YWiHZf7/Skillbridge-online?m=auto&t=D0qqdTQL1yAcwD0B-6',
   },
   {
-    img: cropio, // Replace this with the actual Cropio Figma design image if you have one
-    type: 'Corpio - Figma Design',
+    img: cropio, 
+    type: 'Cropio - Figma Design',
     explanation:
       'Cropio Figma design: A UI/UX prototype focusing on sustainable agriculture solutions designed in Figma to visualize user flow and interface elements.',
     link: 'https://www.figma.com/design/oKPtFqVasv58Rg51hx4gOJ/Corpio?m=auto&t=D0qqdTQL1yAcwD0B-6',
