@@ -299,7 +299,7 @@ export const project = [
     link: 'https://github.com/Pradeep7007/student-database-management',
   },
   {
-    img: skillbridge, // Can replace this with the actual Figma design image for SkillBridge
+    img: skillbridge, 
     type: 'SkillBridge - Figma Design',
     explanation:
       'SkillBridge Figma design: A comprehensive UI/UX design prototype for the SkillBridge learning platform created using Figma.',
@@ -310,7 +310,7 @@ export const project = [
     type: 'Cropio - Figma Design',
     explanation:
       'Cropio Figma design: A UI/UX prototype focusing on sustainable agriculture solutions designed in Figma to visualize user flow and interface elements.',
-    link: 'https://www.figma.com/design/oKPtFqVasv58Rg51hx4gOJ/Corpio?m=auto&t=D0qqdTQL1yAcwD0B-6',
+    link: 'https://www.figma.com/design/oKPtFqVasv58Rg51hx4gOJ/Corpio?m=auto&t=D0qqdTQL1yAcwD0B-6'
   },
   
 ];
