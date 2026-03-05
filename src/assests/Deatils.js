@@ -275,7 +275,7 @@ export const project = [
     type: 'Cropio - Full Stack',
     explanation:
       'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',
-    link: 'https://cropio-nine.vercel.app',
+    link: 'https://cropioai.vercel.app',
   },
   {
     img: data,
@@ -296,7 +296,7 @@ export const project = [
     type: 'Cropio - Frontend',
     explanation:
       'Cropio is a frontend AI-based sustainable agriculture platform. Built using React.js and Bootstrap, it showcases how AI can assist in smart farming practices through intuitive UI and responsive layouts.',
-    link: 'https://github.com/Pradeep7007/student-database-management',
+    link: 'cropioai.vercel.app',
   },
   {
     img: skillbridge, 
