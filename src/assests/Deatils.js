@@ -24,6 +24,7 @@ import se17 from './java se 17.jpg';
 import reactjs from './react js.jpg';
 import nptel from './nptel.png';
 import react_js from './react_cer.png';
+import four from './4.png';
 
 export const certifications = [
   {
@@ -185,6 +186,13 @@ export const project = [
     explanation:
       'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',
     link: 'https://cropioai.vercel.app',
+  },
+  {
+    img:four, 
+    type: 'SLOIS - Full Stack',
+    explanation:
+      'AI/ML-powered MERN stack application predicting semester outcomes using student academic data. Admin manages students, staff, and records via CRUD operations, while students securely view personalized results through a dashboard.',
+    link: 'https://slois.vercel.app',
   },
   {
     img: data,
