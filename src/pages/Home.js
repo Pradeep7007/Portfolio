@@ -4,9 +4,10 @@ import arrow from '../assests/right-arrow.png';
 import one from '../assests/1.png';
 import two from '../assests/2.png';
 import three from '../assests/3.png';
+import four from '../assests/4.png';
 import { useNavigate } from 'react-router-dom';
 
-const images = [one, two, three];
+const images = [one, two, three,four];
 
 function Home() {
   const [current, setCurrent] = useState(0);
