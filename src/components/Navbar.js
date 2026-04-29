@@ -66,7 +66,7 @@ function Navbar() {
           <img src={photo} alt="profile" className="profile-img-mobile" />
           <div>
             <h2 className="name-mobile">Pradeep S</h2>
-            <p className="role-mobile">Full Stack Developer</p>
+            <p className="role-mobile">Frontend Developer</p>
           </div>
         </div>
         <div className="hamburger" onClick={toggleDrawer}>
@@ -83,7 +83,7 @@ function Navbar() {
           </div>
           <div>
             <h3 className="mt-3">Pradeep S</h3>
-            <p>Full Stack Developer</p>
+            <p>Frontend Developer</p>
           </div>
         </div>
 
