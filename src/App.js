@@ -8,18 +8,22 @@ import About from './pages/About.js';
 import Stack from './pages/Stack.js';
 import Project from './pages/Project.js';
 import Contact from './pages/Contact.js';
+import Stats from './pages/Stats.js';
+import PageTracker from './components/PageTracker.js';
 
 
 function App() {
   return (
     <>
       <Navbar />
+      <PageTracker />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/stack" element={<Stack />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/stats" element={<Stats />} />
       </Routes>
     </>
   );
