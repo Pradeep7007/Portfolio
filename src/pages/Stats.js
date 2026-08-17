@@ -54,7 +54,12 @@ const Stats = () => {
 
   return (
     <Container className="my-5">
-      <h2 className="text-center mb-4 text-white">Portfolio Analytics</h2>
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h2 className="text-white m-0">Portfolio Analytics</h2>
+        <button className="btn btn-outline-light btn-sm" onClick={() => window.location.reload()}>
+          Refresh Stats
+        </button>
+      </div>
       <p className="text-center text-muted mb-5">
         Track how many users have viewed the portfolio and specific pages.
       </p>

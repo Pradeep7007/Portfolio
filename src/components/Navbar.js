@@ -104,9 +104,7 @@ function Navbar() {
             <li onClick={() => handleNavigate('/contact')}>
               <img src={contact} alt="contact" />Contact
             </li>
-            <li onClick={() => handleNavigate('/stats')}>
-              <img src={stack} alt="stats" />Analytics
-            </li>
+            
           </ul>
 
           <hr />

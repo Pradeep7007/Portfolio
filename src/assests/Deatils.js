@@ -25,6 +25,7 @@ import reactjs from './react js.jpg';
 import nptel from './nptel.png';
 import react_js from './react_cer.png';
 import four from './4.png';
+import poultry from './poultry.png';
 
 export const certifications = [
   {
@@ -193,6 +194,13 @@ export const project = [
     explanation:
       'AI/ML-powered MERN stack application predicting semester outcomes using student academic data. Admin manages students, staff, and records via CRUD operations, while students securely view personalized results through a dashboard.',
     link: 'https://slois.vercel.app',
+  },
+  {
+    img:poultry, 
+    type: 'Poultry — Full Stack',
+    explanation:
+      'Built with the MERN stack, Bootstrap, and Chart.js, Poultri is a full-fledged poultry management platform with modular entity management, interactive analytics, and financial insights. It integrates the Google Sheets API for data synchronization and supports import/export functionality, enabling efficient data handling and streamlined farm operations.',
+    link: 'https://pmspoultry.vercel.app',
   },
   {
     img: data,
