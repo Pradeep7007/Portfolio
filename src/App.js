@@ -8,7 +8,7 @@ import About from './pages/About.js';
 import Stack from './pages/Stack.js';
 import Project from './pages/Project.js';
 import Contact from './pages/Contact.js';
-import Stats from './pages/Stats.js';
+//import Stats from './pages/Stats.js';
 import PageTracker from './components/PageTracker.js';
 
 
