@@ -27,6 +27,7 @@ import react_js from './react_cer.png';
 import four from './4.png';
 import poultry from './poultry.png';
 import GitScope from './Gitscope.png';
+import Dayflow from './Dayflow.png';
 
 export const certifications = [
   {
@@ -193,7 +194,7 @@ export const project = [
     img: GitScope, 
     type: 'GitScope - Full Stack',
     explanation:
-      'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',
+      'GitScope is a centralized platform that tracks student GitHub activities and open-source contributions. It analyzes repositories, commits, pull requests, and issues, providing **activity analytics, contribution scores, rankings, and reports** for effective student monitoring.',
     link: 'https://git-scope-ruddy.vercel.app',
   },
   {
@@ -202,6 +203,13 @@ export const project = [
     explanation:
       'AI/ML-powered MERN stack application predicting semester outcomes using student academic data. Admin manages students, staff, and records via CRUD operations, while students securely view personalized results through a dashboard.',
     link: 'https://slois.vercel.app',
+  },
+  {
+    img:Dayflow, 
+    type: 'Dayflow - Full Stack',
+    explanation:
+      'Dayflow is a Human Resource Management System that digitizes and streamlines core HR operations.It enables secure employee authentication, profile management, attendance tracking, and leave management.Admins/HR can manage employees, approve leave requests, monitor attendance, and manage salary details.The system provides a centralized, role-based platform for efficient and transparent HR management.',
+    link: 'https://github.com/Pradeep7007/Dayflow---Human-Resource-Management-System',
   },
   {
     img:poultry, 
