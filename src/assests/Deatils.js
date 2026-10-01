@@ -26,6 +26,7 @@ import nptel from './nptel.png';
 import react_js from './react_cer.png';
 import four from './4.png';
 import poultry from './poultry.png';
+import GitScope from './Gitscope.png';
 
 export const certifications = [
   {
@@ -189,7 +190,7 @@ export const project = [
     link: 'https://cropioai.vercel.app',
   },
   {
-    img: cropio_demo, 
+    img: GitScope, 
     type: 'GitScope - Full Stack',
     explanation:
       'AI-driven sustainable agriculture platform using a Multi-Agent System. Empowers farmers with crop disease detection, yield prediction, and crop recommendations while connecting them directly to dealers/buyers. Promotes fair pricing, transparency, and data-driven decisions through smart ML models and a connected ecosystem.',
