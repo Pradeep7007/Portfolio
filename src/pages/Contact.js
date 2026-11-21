@@ -20,6 +20,7 @@ function Contact() {
       <div className='contact-info'>
         <p><strong>Name:</strong> Pradeep S</p>
         <p><strong>Phone:</strong> <a href="tel:+919443249161">+91 94432 49161</a></p>
+        <p><strong>E-mail:</strong> pmspradeep007@gmail.com</p>
         <p><strong>Location:</strong> Namakkal , 637018.</p>
       </div>
 
