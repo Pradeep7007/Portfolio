@@ -26,7 +26,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    }, 3000);
 
     // Cleanup interval on unmount
     return () => clearInterval(interval);

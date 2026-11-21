@@ -83,7 +83,7 @@ function Navbar() {
           </div>
           <div>
             <h3 className="mt-3">Pradeep S</h3>
-            <p>Frontend Developer</p>
+            <p>FullStack Developer</p>
           </div>
         </div>
 
